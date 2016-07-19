@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report_found_item_title"
+        android:id="@+id/reportTitleTextView"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/item_type_text"
+        android:id="@+id/itemTypeTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/reportTitleTextView"
+        android:layout_alignStart="@+id/itemTypeSpinner"
+        style="@style/CustomTextStyle" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemTypeSpinner"
+        android:layout_below="@+id/itemTypeTextView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/reportTitleTextView"
+        android:layout_marginLeft="5dp"
+        android:entries="@array/items_array"
+        android:layout_alignEnd="@+id/dateEditTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/desc_text"
+        android:id="@+id/descTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/itemTypeSpinner"
+        android:layout_alignStart="@+id/itemTypeSpinner"
+        android:layout_marginTop="20dp"
+        style="@style/CustomTextStyle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/descTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentEnd="true"
+        android:hint="enter description of item"
+        android:layout_above="@+id/dateTextView"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date"
+        android:id="@+id/dateTextView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        style="@style/CustomTextStyle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/dateEditTextView"
+        android:layout_below="@+id/dateTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:hint="click to select date"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="place"
+        android:id="@+id/placeTextView"
+        android:layout_below="@+id/dateEditTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        style="@style/CustomTextStyle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placeEditTextView"
+        android:layout_below="@+id/placeTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/itemTypeSpinner"
+        android:layout_marginLeft="5dp"
+        android:hint="enter place" />
+
+</RelativeLayout>

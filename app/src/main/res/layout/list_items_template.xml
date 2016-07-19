@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/CustomTextStyle"
+        android:id="@+id/itemNameTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/item_type_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/itemValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toEndOf="@+id/itemNameTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        style="@style/CustomTextStyle"
+        android:id="@+id/descTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/itemNameTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/desc_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/descValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemValueTextViewLIT"
+        android:layout_marginLeft="2dp"
+        android:layout_toEndOf="@+id/descTextViewLIT"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:ems="7"
+        android:focusable="false"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/dateTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/descTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/date_lost_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:id="@+id/dateValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descValueTextViewLIT"
+        android:layout_marginLeft="2dp"
+        android:layout_toEndOf="@+id/dateTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/placeTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dateTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/place_lost_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:id="@+id/placeValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateValueTextViewLIT"
+        android:layout_marginLeft="2dp"
+        android:layout_toEndOf="@+id/placeTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/reportedByTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/placeTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="Reported By-"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:id="@+id/reportedByValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placeValueTextViewLIT"
+        android:layout_marginLeft="2dp"
+        android:layout_toEndOf="@+id/reportedByTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/claimItemButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateValueTextViewLIT"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/itemValueTextViewLIT"
+        android:layout_marginRight="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/claim_item_button"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/foundItemButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateValueTextViewLIT"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/itemValueTextViewLIT"
+        android:layout_marginRight="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/found_item_button"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nameTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/reportedByTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/name_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:id="@+id/nameValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reportedByValueTextViewLIT"
+        android:layout_toEndOf="@+id/reportedByTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/classTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/class_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/nameTextViewLIT"
+        android:layout_alignParentStart="true"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:id="@+id/classValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/classTextViewLIT"
+        android:clickable="false"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/nameTextViewLIT" />
+
+    <TextView
+        android:id="@+id/sectionTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/Section_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/nameValueTextViewLIT"
+        android:layout_toEndOf="@+id/reportedByValueTextViewLIT"
+        style="@style/CustomTextStyle" />
+
+    <TextView
+        android:id="@+id/sectionValueTextViewLIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/sectionTextViewLIT"
+        android:layout_toEndOf="@+id/sectionTextViewLIT" />
+
+</RelativeLayout>

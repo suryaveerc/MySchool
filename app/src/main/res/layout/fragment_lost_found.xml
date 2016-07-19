@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:layout_above="@+id/reportLostButton"
+        android:layout_alignStart="@+id/reportLostButton"
+        android:layout_marginBottom="46dp"
+        android:width="175dp"
+        android:typeface="normal"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post an item"
+        android:id="@+id/reportFoundButton"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/reportLostButton"
+        android:layout_alignEnd="@+id/reportLostButton"
+        android:width="175dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report a lost item"
+        android:id="@+id/reportLostButton"
+        android:layout_gravity="center"
+        android:layout_above="@+id/reportFoundButton"
+        android:layout_alignStart="@+id/viewItemsButton"
+        android:width="175dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View lost &amp; found items"
+        android:id="@+id/viewItemsButton"
+        android:layout_gravity="center"
+        android:layout_below="@+id/reportFoundButton"
+        android:layout_centerHorizontal="true"
+        android:width="175dp" />
+
+</RelativeLayout>
